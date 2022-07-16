@@ -96,6 +96,7 @@ void setup() {
   pinMode(SETUP, OUTPUT);    //Pin instantiation as output for home returning when signal is ON
   pinMode(dir,OUTPUT);       //Pin instantiation for setting the direction of motion
   pinMode(SVON, OUTPUT);     //Pin instantiation for powering the Servo
+  
   digitalWrite(SVON,HIGH);   //Initialization of the SVON signal as HIGH. The servo turns on when the SVON signal is in the falling edge
   digitalWrite(SETUP,HIGH);  //Initialization of the SETUP signal as HIGH. The servo goes to home when SETUP signal is in the falling edge
   digitalWrite(dir,direct);  //Initialization of the direction signal as HIGH
